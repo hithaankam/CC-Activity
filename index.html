@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A visual guide to Web 3.0 and decentralized cloud computing architecture." />
+  <title>Web 3.0 & Decentralized Cloud Architecture</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <a class="brand" href="#top" aria-label="Nexus home">
+      <span class="brand-mark">N</span><span>NEXUS<span class="accent">.WEB3</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="#comparison">Architecture</a>
+      <a href="#storage">Storage</a>
+      <a href="#compute">Compute</a>
+      <a href="#hybrid">Overview</a>
+    </div>
+    <a class="nav-cta" href="#comparison">Explore Layers <span>↗</span></a>
+  </nav>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Decentralized Systems Briefing</p>
+        <h1>Web 3.0 &amp;<br /><span>Decentralized Cloud</span><br />Architecture</h1>
+        <p class="hero-subtitle">A practical guide to trust-minimized storage, distributed compute, and the hybrid architectures powering the next internet.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#comparison">Explore Architecture <span>→</span></a>
+          <a class="button button-secondary" href="#hybrid"><span class="play">▶</span> View the Stack</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-label="Decentralized network visualization">
+        <div class="orbit orbit-outer"><div class="node n1"></div><div class="node n2"></div><div class="node n3"></div></div>
+        <div class="orbit orbit-middle"><div class="node n4"></div><div class="node n5"></div></div>
+        <div class="core">
+          <span class="core-ring"></span><span class="core-glyph">⬡</span>
+          <small>DECENTRALIZED</small>
+        </div>
+        <div class="metric-card metric-left"><span>NETWORK</span><strong>21,840</strong><small>Active Nodes</small></div>
+        <div class="metric-card metric-right"><span>WEB 3 STATUS</span><strong class="cyan">LIVE</strong><small>Global Mesh</small></div>
+      </div>
+    </section>
+
+    <section class="section-shell content-section" id="comparison">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">01 / THE EVOLUTION</p><h2>Web 2.0 vs Web 3.0</h2></div>
+        <div class="filter-group" aria-label="Comparison filter">
+          <button class="filter-button active" data-filter="all" type="button">All Systems</button>
+          <button class="filter-button" data-filter="centralized" type="button">Centralized</button>
+          <button class="filter-button" data-filter="p2p" type="button">Peer-to-Peer</button>
+        </div>
+      </div>
+
+      <div class="glass-table-wrap reveal">
+        <table class="comparison-table">
+          <thead><tr><th>Capability</th><th>Centralized Cloud <small>AWS · Azure · GCP</small></th><th class="p2p-heading">Peer-to-Peer <small>Web3 Networks</small></th></tr></thead>
+          <tbody>
+            <tr data-system="centralized p2p"><td><span class="table-icon">◷</span><strong>Latency</strong></td><td><span class="rating">High</span><div class="bar"><i style="--w:72%"></i></div><small>Optimized regional edges</small></td><td><span class="rating cyan">Variable</span><div class="bar cyan-bar"><i style="--w:58%"></i></div><small>Improves with nearby peers</small></td></tr>
+            <tr data-system="centralized p2p"><td><span class="table-icon purple">◎</span><strong>Uptime</strong></td><td><span class="rating">99.99%</span><div class="bar"><i style="--w:94%"></i></div><small>Provider-backed SLA</small></td><td><span class="rating cyan">Distributed</span><div class="bar cyan-bar"><i style="--w:88%"></i></div><small>Redundant by design</small></td></tr>
+            <tr data-system="centralized p2p"><td><span class="table-icon">◇</span><strong>Censorship Resistance</strong></td><td><span class="rating low">Low</span><div class="bar"><i style="--w:30%"></i></div><small>Policy & jurisdiction dependent</small></td><td><span class="rating cyan">High</span><div class="bar cyan-bar"><i style="--w:91%"></i></div><small>No single deactivation point</small></td></tr>
+            <tr data-system="centralized p2p"><td><span class="table-icon purple">◉</span><strong>Data Ownership</strong></td><td><span class="rating low">Provider-held</span><div class="bar"><i style="--w:35%"></i></div><small>Account and policy controlled</small></td><td><span class="rating cyan">User-held</span><div class="bar cyan-bar"><i style="--w:96%"></i></div><small>Keys and cryptographic IDs</small></td></tr>
+            <tr data-system="centralized p2p"><td><span class="table-icon">$</span><strong>Cost</strong></td><td><span class="rating">Predictable</span><div class="bar"><i style="--w:64%"></i></div><small>Usage plus enterprise premium</small></td><td><span class="rating cyan">Market-driven</span><div class="bar cyan-bar"><i style="--w:72%"></i></div><small>Capacity competition</small></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-shell content-section" id="storage">
+      <div class="section-heading reveal"><div><p class="eyebrow">02 / STORAGE LAYER</p><h2>Decentralized Storage</h2></div><p class="section-note">Content is addressed by what it is, not where it lives.</p></div>
+      <div class="storage-layout">
+        <article class="cid-panel glass-card reveal">
+          <span class="panel-label">CONTENT ADDRESSING</span>
+          <div class="cid-icon">CID</div>
+          <h3>Content Identifiers (CIDs)</h3>
+          <p>A CID is a cryptographic hash transformed into a stable content address. Identical bytes produce the same identifier, enabling global verification and deduplication.</p>
+          <code>bafybeigdyrzt...7xq2u</code>
+          <div class="cid-flow"><span>Input File</span><b>→</b><span>Cryptographic Hash</span><b>→</b><span>Verifiable CID</span></div>
+        </article>
+        <div class="feature-grid reveal">
+          <article class="feature-card"><div class="feature-top"><span class="protocol-logo ipfs">IPFS</span><span class="tag">STORAGE</span></div><h3>IPFS</h3><p>Peer-to-peer content addressing and transfer. Files are discovered across a distributed mesh by CID.</p><button class="text-button" data-detail="IPFS separates location from content and uses distributed hash tables to locate providers.">Learn more →</button></article>
+          <article class="feature-card"><div class="feature-top"><span class="protocol-logo filecoin">FIL</span><span class="tag">MARKET</span></div><h3>Filecoin</h3><p>An incentive layer where storage providers compete through retrievable capacity and cryptographic proofs.</p><button class="text-button" data-detail="Filecoin adds economic incentives, proof-of-replication, and proof-of-spacetime to storage.">Learn more →</button></article>
+          <article class="feature-card"><div class="feature-top"><span class="protocol-logo arweave">AR</span><span class="tag">PERMANENCE</span></div><h3>Arweave</h3><p>A permanent datachain designed for one-time payments and resilient, long-term archival storage.</p><button class="text-button" data-detail="Arweave rewards miners for data replication and aims to make archival storage economical and permanent.">Learn more →</button></article>
+        </div>
+      </div>
+      <p class="detail-output" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="section-shell content-section" id="compute">
+      <div class="section-heading reveal"><div><p class="eyebrow">03 / COMPUTE LAYER</p><h2>Distributed Compute</h2></div><p class="section-note">CPU and GPU capacity harvested from an open global marketplace.</p></div>
+      <div class="compute-grid reveal">
+        <article class="compute-card"><div class="compute-logo">AK</div><div><span class="compute-kicker">MARKETPLACE</span><h3>Akash Network</h3><p>Containerized workloads leased on a decentralized cloud marketplace with reverse-auction pricing.</p></div><span class="availability">● Available</span></article>
+        <article class="compute-card"><div class="compute-logo flux">FX</div><div><span class="compute-kicker">EDGE NETWORK</span><h3>Flux</h3><p>Globally distributed application infrastructure running containers across independent nodes.</p></div><span class="availability">● Available</span></article>
+        <article class="compute-card"><div class="compute-logo render">RN</div><div><span class="compute-kicker">GPU NETWORK</span><h3>Render Network</h3><p>A peer-powered GPU network connecting graphics, AI, and rendering workloads with idle capacity.</p></div><span class="availability">● Available</span></article>
+      </div>
+    </section>
+
+    <section class="section-shell content-section" id="hybrid">
+      <div class="section-heading reveal"><div><p class="eyebrow">04 / HYBRID ARCHITECTURE</p><h2>The Complete Stack</h2></div><p class="section-note">Web3 logic combines with resilient off-chain infrastructure.</p></div>
+      <div class="architecture reveal">
+        <div class="layer layer-top"><div class="layer-icon">ETH</div><div><span>ON-CHAIN</span><h3>Smart Contracts</h3><p>Identity, governance, escrow, access control, and settlement</p></div><small>Ethereum · L2s</small></div>
+        <div class="connectors"><span></span><span></span><span></span></div>
+        <div class="layer-grid">
+          <article class="layer layer-mid"><div class="layer-icon purple-icon">IP</div><div><span>OFF-CHAIN STORAGE</span><h3>Content &amp; Media</h3><p>Large data stored on IPFS, Filecoin, and Arweave</p></div></article>
+          <article class="layer layer-mid"><div class="layer-icon cyan-icon">IDX</div><div><span>CLOUD INDEXING</span><h3>Query &amp; Discovery</h3><p>Indexed APIs make decentralized state fast to query</p></div></article>
+        </div>
+        <div class="connectors lower"><span></span><span></span><span></span></div>
+        <div class="client-layer"><span>Web Client</span><i></i><span>Mobile</span><i></i><span>API / SDK</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="brand"><span class="brand-mark">N</span><span>NEXUS<span class="accent">.WEB3</span></span></div><p>Architecture brief · Built for the decentralized future</p><a href="#top">Back to top ↑</a></footer>
+  <script src="app.js"></script>
+</body>
+</html>
